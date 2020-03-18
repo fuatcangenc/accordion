@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.accordion {
+  width: 50%;
+  margin: 0 auto;
+}
+.accordion label {
+  display: block;
+  background-color: orangered;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid pink;
+}
+.accordion label:hover {
+  background-color: rgb(192, 73, 30);
+}
+#accordion1:checked ~ p,
+#accordion2:checked ~ p,
+#accordion3:checked ~ p {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.accordion p {
+  display: none;
+  opacity: 1;
+  visibility: hidden;
+}
+.accordion input {
+  display: none;
+  visibility: hidden;
+}
